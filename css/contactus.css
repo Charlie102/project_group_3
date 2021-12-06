@@ -1,0 +1,123 @@
+
+.bg-img {
+    /* The image used */
+    background-image: url("/img/contactus.jpg");
+    height: 360px;
+    width: 1100px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Needed to position the navbar */
+    position: relative;
+    margin-left: 210px;
+}
+
+/*Information*/
+.contact {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+.container-ctu{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.contact .contact-information {
+    min-height: 130px;
+    margin: 0 0 12px 0;
+    padding: 20px 15px 0 15px;
+    background: rgba(0, 0, 0, .04);
+}
+.contact .contact-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.contact .contact-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F172A1;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.contact .contact-icon i {
+    font-size: 18px;
+    color: #ffffff;
+}
+.contact .contact-text {
+    position: relative;
+    width: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+.contact .contact-text h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #F172A1;
+}
+.contact .contact-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #454545;
+}
+.contact .contact-social a {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #F172A1;
+}
+.contact .contact-social a:hover {
+    color: #ace61c;
+}
+
+
+
+/*Form Feetback*/
+input[type=text], select, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    width: 450px;
+}
+input[type=submit] {
+    background-color: #F172A1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+input[type=submit]:hover {
+    background-color: red;
+}
+.fcontact {
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 500px ;
+    height: 470px;
+    float: left;
+    margin-left: 150px;
+    margin-top: 20px;
+  }
+
+/*Map*/
+iframe{
+    width: 600px; 
+    height: 470px;
+    margin: 20px 150px 20px 20px;
+    float: right;
+}
