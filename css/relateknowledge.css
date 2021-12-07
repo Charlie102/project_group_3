@@ -1,15 +1,56 @@
 
 .bg-img {
     /* The image used */
-    background-image: url("/img/his2.1.jpg");
-    height: 650px;
-    width: 1100px;
+    background-image: url("../img/relate/relate0.jpg");
+    height: 750px;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     /* Needed to position the navbar */
     position: relative;
-    margin-left: 220px;
 }
-
+/*Info scroll*/
+.row-scroll{
+    text-align: left;
+}
+.bd-scroll{
+    position: relative;
+    padding: 1rem;
+    margin: 1rem -15px 0;
+    border: solid #fff;
+    border-width: .2rem 0 0;
+}
+.navbar-scroll{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+.navbar-scroll a{
+    color: #FF00FF;
+}
+.scrollspy{
+    position: relative;
+    height: 860px;
+    overflow: auto;
+}
+.nav-scroll{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+/* active
+.nav-pills .nav-link-scroll.active, .nav-pills .show>.nav-link-scroll{
+    color: #fff;
+    background-color: #FF00FF;
+}*/
+.nav-link-scroll{
+    border-radius: .25rem;
+    display: block;
+    padding: .5rem 1rem;
+}
