@@ -46,15 +46,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Product
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="product.html">Product 1</a>
-                                <a class="dropdown-item" href="product.html">Product 2</a>
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Product</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="gallery.html">Gallery</a>
@@ -90,91 +83,91 @@
         </div>
     </div>
 
-    <div class="main">
+    <!-- START DATA JSON PRODUCT -->
 
-        <h1>MYLOGO.COM</h1>
-        <hr>
+    <div id="filter-data" class="filter-section container-fluid">
 
-        <h2>PORTFOLIO</h2>
-
-        <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-            <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-            <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-            <button class="btn" onclick="filterSelection('people')"> People</button>
-        </div>
-
-        <!-- Portfolio Gallery Grid page-product-->
+        <!--Start: Cột Filter -->
         <div class="row">
-            <div class="column nature">
-                <div class="content">
-                    <img src="/img/Gallery1.jpg" alt="Mountains" style="width:100%">
-                    <h4>Mountains</h4>
-                    <p>Lorem ipsum dolor..</p>
+            <div class="col-md-6 col-lg-4">
+                <div class="categories-header">
+                    <p>Related Products <span class="fa fa-filter" style="color: black; font-size: 20px"></span></p>
                 </div>
-            </div>
-            <div class="column nature">
-                <div class="content">
-                    <img src="/img/Gallery2.jpg" alt="Lights" style="width:100%">
-                    <h4>Lights</h4>
-                    <p>Lorem ipsum dolor..</p>
-                </div>
-            </div>
-            <div class="column nature">
-                <div class="content">
-                    <img src="/img/Gallery3.jpg" alt="Nature" style="width:100%">
-                    <h4>Forest</h4>
-                    <p>Lorem ipsum dolor..</p>
-                </div>
-            </div>
 
-            <div class="column cars">
-                <div class="content">
-                    <img src="/img/Gallery4.jpg" alt="Car" style="width:100%">
-                    <h4>Retro</h4>
-                    <p>Lorem ipsum dolor..</p>
-                </div>
-            </div>
-            <div class="column cars">
-                <div class="content">
-                    <img src="/img/Gallery5.jpg" alt="Car" style="width:100%">
-                    <h4>Fast</h4>
-                    <p>Lorem ipsum dolor..</p>
-                </div>
-            </div>
-            <div class="column cars">
-                <div class="content">
-                    <img src="/img/Gallery6.jpg" alt="Car" style="width:100%">
-                    <h4>Classic</h4>
-                    <p>Lorem ipsum dolor..</p>
-                </div>
-            </div>
+                <div class="slide-box" id="filter_button">
 
-            <div class="column people">
-                <div class="content">
-                    <img src="/img/Gallery7.jpg" alt="Car" style="width:100%">
-                    <h4>Girl</h4>
-                    <p>Lorem ipsum dolor..</p>
+                    <div class="vertical-menu">
+                        <ul>
+                            <li><a href='#profile' class="filter" data-filter="all">All</a></li>
+                            <!-- Nail Lacquer Item -->
+                            <li class='sub-menu'><a class="filter" data-filter="Nail Lacquer" href='#Nail Lacquer'>Nail Lacquer<div
+                                        class='fa fa-caret-down right'></div></a>
+                                <ul>
+                                    <li><a class="filter-brand pdbrand" data-filter="O.P.I">O.P.I</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Neon">Neon</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Classic Shades">Classic Shades</a></li>
+                                </ul>
+                            </li>
+                            <!-- Nail cleaning product Item -->
+                            <li class='sub-menu'><a class="filter" data-filter="Nail cleaning product" href='#Nail cleaning product'>Nail cleaning product
+                                    <div class='fa fa-caret-down right'></div>
+                                </a>
+                                <ul>
+                                    <li><a class="filter-brand pdbrand" data-filter="THE RUCY">THE RUCY</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Jacqualine">Jacqualine</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Missha">Missha</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Yves Rocher">Yves Rocher</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="FELINA">FELINA</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Flormar">Flormar</a></li>
+                                </ul>
+                            </li>
+                            <!-- Nail polish Item -->
+                            <li class='sub-menu'><a class="filter" data-filter="Nail Polish" href='#Nail Polish'>Nail Polish<div
+                                        class='fa fa-caret-down right'></div></a>
+                                <ul>
+                                    <li><a class="filter-brand pdbrand" data-filter="Fairy's Gift">Fairy's Gift</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Felina">Felina</a></li>
+                                    <li><a class="filter-brand pdbrand" data-filter="Rosalind">Rosalind</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End: Cột Filter -->
+            </div>
+            <!-- End: Cột Filter -->
+
+
+
+            <!-- Start: Cột sản phẩm -->
+            <div class="col-md-6 col-lg-8">
+                <!-- Khối chứa thông tin sản phẩm -->
+                <div class="product-layout" id="products">
                 </div>
             </div>
-            <div class="column people">
-                <div class="content">
-                    <img src="/img/Gallery8.jpg" alt="Car" style="width:100%">
-                    <h4>Man</h4>
-                    <p>Lorem ipsum dolor..</p>
-                </div>
-            </div>
-            <div class="column people">
-                <div class="content">
-                    <img src="/img/Gallery9.jpg" alt="Car" style="width:100%">
-                    <h4>Woman</h4>
-                    <p>Lorem ipsum dolor..</p>
-                </div>
-            </div>
-            <!-- END GRID -->
         </div>
-        <!-- END MAIN -->
+        <!-- End: Cột sản phẩm -->
+
+        <!-- Modal Temporary -->
+        <div class="modal fade" id="showModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- div.modal-body include json data -->
+                    <div class="modal-body modal-item">
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
+    <!-- END DATA PRODUCT -->
 
     <!--FOOTER-->
     <div class="footer">
@@ -217,6 +210,6 @@
         </div>
 
 </body>
-<script src="/js/index.js"></script>
+<script src="/js/product.js"></script>
 
 </html>

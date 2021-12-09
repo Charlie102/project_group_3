@@ -1,54 +1,215 @@
-/* Center website */
-.main {
-    max-width: 1000px;
-    margin: auto;
+.bg-img {
+  /* The image used */
+  background-image: url("../img/product/product.jpg");
+  height: 750px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Needed to position the navbar */
+  position: relative;
 }
-h1 {
-    font-size: 50px;
-    word-break: break-all;
+
+/*show more*/
+.modal-content{
+  background-image: linear-gradient(-90deg, #d38312, #FF00FF);
+  z-index: 9999 !important;
 }
-.row {
-    margin: 10px -16px;
+.modal-header{
+  color: #fff;
 }
-  /* Add padding BETWEEN each column */
-.row,
-.row > .column {
-    padding: 8px;
+.modal-body{
+  color: #fff;
 }
-  /* Create three equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 33.33%;
-    display: none; /* Hide all elements by default */
+.modal-footer{
+  color: #fff;
 }
-  /* Clear floats after rows */ 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.btn{
+  background-color: #FF00FF !important;
+  color: #fff !important;
+  margin-left: 20px !important;
+  border-radius: 50px !important;
 }
-  /* Content */
-.content {
-    background-color: white;
-    padding: 10px;
-}
-  
-  /* The "show" class is added to the filtered elements */
-.show {
-    display: block;
-}
-  /* Style the buttons */
-.btn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: white;
-    cursor: pointer;
-}
-.btn:hover {
-    background-color: #ddd;
-}
-.btn.active {
-    background-color: #666;
-    color: white;
-}
+
+    /* Start: Shop section */
+    
+    
+    /* Start: Filter-Bar */
+    .filter-section {
+      margin-top: 50px;
+    }
+    
+    .categories {
+      border: 20px solid transparent;
+      font-size: 20px;
+      padding: 10px 0;
+      background: snow;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+    
+    .categories-header p {
+      border-left: 10px solid #FF00FF;
+      padding-left: 10px;
+      font-size: 35px;
+      font-weight: 350;
+      letter-spacing: 1.5px;
+    }
+    
+    .categories-header p::after {
+      display: block;
+      content: "";
+      height: 1px;
+      background: rgb(204, 203, 203);
+    }
+    
+    .categories-list li {
+      line-height: 30px;
+      display: block;
+      list-style-type: none;
+    }
+    
+    .categories-list li a {
+      font-size: 20px;
+      display: block;
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: 300;
+      letter-spacing: 1.5px;
+      transition: 0.2s linear;
+      padding-left: 10px;
+    }
+    
+    .categories-list li a:hover {
+      background: white;
+      border-left: 10px solid lightpink;
+    }
+    /* List SP -----------------------------*/
+    .element_gifts img {
+      max-width: 100%;
+      border: 3px solid snow;
+    }
+    
+    .element_gifts {
+      position: relative;
+      width: 250px;
+      height: 410px;
+      /*     border: 3px solid black; */
+      margin-bottom: 30px !important;
+      margin: 0 10px;
+      transition: 0.2s linear;
+      text-align: center;
+      cursor: pointer;
+      font-size: 18px;
+      background: snow;
+      padding: 10px 15px;
+    }
+    
+    .btn-black {
+      background: transparent;
+      color: black;
+      border: 1px solid black;
+      font-weight: 400;
+      transition: all 200ms;
+    }
+    
+    .btn-black:hover {
+      border: unset;
+      background: lightpink;
+      color: white;
+    }
+    
+    .btn-pink {
+      background: #ffe5d8;
+      color: black;
+      font-weight: 700;
+      transition: all 200ms;
+    }
+    
+    .btn-pink:hover {
+      background: transparent;
+      color: black;
+      border-bottom: 5px solid lightpink;
+    }
+    
+    .element_gifts:hover {
+      background: snow;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      transform: translateY(-5%);
+    }
+    
+    /* test lai #filter */
+    
+    .product-layout {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      transition: 0.4s;
+    }
+    
+    /* slide-menu */
+    .vertical-menu {
+      border-radius: 20px;
+      margin: 10px 0;
+      width: 100%;
+    }
+    
+    .vertical-menu li {
+      padding-left: 10px;
+    }
+    .vertical-menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .slide-box {
+      background: snow;
+      padding: 10px 15px;
+    }
+    
+    .vertical-menu ul li a {
+      padding: 5px 10px;
+      display: block;
+      color: black;
+      font-size: 20px;
+      font-weight: 320;
+      text-decoration: none;
+      transition: 0.2s linear;
+    }
+    .vertical-menu ul li a:hover {
+      border-left: 8px solid black;
+      background: white;
+    }
+    
+    .vertical-menu ul li a .fa {
+      color: black;
+      width: 16px;
+      text-align: center;
+      margin-right: 5px;
+      float: right;
+    }
+    .vertical-menu ul ul {
+      background-color: transparent;
+    }
+    
+    .vertical-menu ul ul li {
+      display: block;
+      background: white;
+    }
+    .vertical-menu ul li ul li a {
+      width: 100%;
+      /* background: snow; */
+      border-left: 4px solid transparent;
+    }
+    .vertical-menu ul li ul li a:hover {
+      width: 100%;
+      background: rgb(212, 211, 211);
+      border-left: 10px solid #FF00FF;
+    }
+    
+    /* End: product page */
