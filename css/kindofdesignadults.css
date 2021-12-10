@@ -1,0 +1,16 @@
+
+.bg-img {
+    /* The image used */
+    background-image: url("../img/kindofdesign/adults/adults.png");
+    height: 650px;
+    width: auto;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Needed to position the navbar */
+    position: relative;
+}
+.adults-page h4, p, img{
+    margin-left: 20px;
+}
