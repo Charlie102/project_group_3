@@ -1,0 +1,30 @@
+.bg-img {
+    /* The image used */
+    background-image: url("../img/kindofdesign/kids/kids.jpg");
+    height: 750px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+
+.content{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.content img{
+    margin-left: 490px;
+}
+.content1 li{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.container{
+    max-width: 1400px !important;
+}
+.card a{
+    color: #FF00FF;
+}
