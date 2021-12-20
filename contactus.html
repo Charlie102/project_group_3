@@ -144,15 +144,15 @@
             <div class="row contact-form">
                 <div class="col-md-6 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="fcontact">
-                        <form action="/action_page.php">
+                        <form action="/contactus.html">
                             <label for="fname">Name</label><br>
-                            <input type="text" id="fname" name="name" placeholder="Your name.."><br>
+                            <input type="text" id="fname" name="name" placeholder="Your name.." required><br>
 
                             <label for="email">Email</label><br>
-                            <input type="text" id="email" name="email" placeholder="Your email.."><br>
+                            <input type="text" id="email" name="email" placeholder="Your email.." required><br>
 
                             <label for="country">Country</label><br>
-                            <select id="country" name="country">
+                            <select id="country" name="country" required>
                                 <option value="vietnam">Vietnam</option>
                                 <option value="australia">Australia</option>
                                 <option value="canada">Canada</option>
@@ -176,6 +176,12 @@
             </div>
         </div>
     </div>
+
+    <!-- Back to top button -->
+    <button id="myBtn" onclick="topFunction()">
+        <img src="img/icon.jpg" alt="">
+    </button>
+    <!-- Back to top button -->
 
     <!--FOOTER-->
     <div class="footer">
@@ -218,6 +224,6 @@
         </div>
     </div>
 </body>
-<script src="/js/index.js"></script>
+<script src="js/index.js"></script>
 
 </html>
